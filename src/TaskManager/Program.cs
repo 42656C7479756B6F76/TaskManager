@@ -7,6 +7,12 @@ builder.WebHost.ConfigureKestrel(options =>
 {
     options.ListenLocalhost(5213, o => o.Protocols = HttpProtocols.Http2);
 });
+
+var services = builder.Services;
+
+services
+    .AddDalInfrastructure(builder.Configuration);
+
 var app = builder.Build();
 
 app.MigrateUp();
