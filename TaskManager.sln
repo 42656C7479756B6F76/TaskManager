@@ -5,6 +5,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3370BE85-5897-4055-A15E-7936D0E232C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aux", "aux", "{6CC68DB9-AC3A-4E00-8566-92A5A20F87BA}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Proto", "src\TaskManager.Proto\TaskManager.Proto.csproj", "{201741A3-869C-4D20-917D-35CF6D07900E}"
 EndProject
